@@ -20,6 +20,7 @@
             "id": "ignore-slug",
             "aliases": ["Ignore File for Slug compiler", "ignore-slug"],
             "extensions": [".slugignore"],
+            "filenames": [".gitignore"],
             "configuration": "./ignore.configuration.json"
         },{
             "id": "ignore-hgignore",
