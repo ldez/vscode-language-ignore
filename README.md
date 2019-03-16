@@ -1,5 +1,9 @@
 # Ignore files Package for VS Code
 
+[![Version](https://vsmarketplacebadge.apphb.com/version/ldez.ignore-files.svg)](https://marketplace.visualstudio.com/items?itemName=ldez.ignore-files)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/ldez.ignore-files.svg)](https://marketplace.visualstudio.com/items?itemName=ldez.ignore-files)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/ldez.ignore-files.svg)](https://vsmarketplacebadge.apphb.com/rating/ldez.ignore-files.svg)
+
 Adds syntax highlighting to 'ignore' files.
 
 ## Supported files
