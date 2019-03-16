@@ -1,8 +1,16 @@
 {
-  "name": "Ignore File for Slug compiler (gitignore syntax)",
-  "scopeName": "text.ignore.slugignore",
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ignore",
+  "scopeName": "text.ignore",
   "fileTypes": [
-    "slugignore"
+    "gitignore",
+    "npmignore",
+    "coffeelintignore",
+    "dockerignore",
+    "atomignore",
+    "vscodeignore",
+    "eslintignore",
+    "prettierignore"
   ],
   "maxTokensPerLine": 100,
   "patterns": [
@@ -51,37 +59,13 @@
           "match": "(?<!^|\\\\)(!)(.*)",
           "captures": {
             "1": {
-              "name": "invalid.illegal.symbol.negate.ignore"
+              "name": "constant.other.symbol.negate.ignore"
             }
           }
         },
         {
-          "name": "invalid.illegal.symbol.negate.ignore",
+          "name": "constant.other.symbol.negate.ignore",
           "match": "(?<!\\\\)!"
-        }
-      ]
-    },
-    "file": {
-      "patterns": [
-        {
-          "name": "line.file.ignore",
-          "match": "^(/)?(.+)(\\.[\\w]+)?(?<!/)$",
-          "captures": {
-            "1": {
-              "name": "constant.restriced.file.ignore"
-            },
-            "2": {
-              "name": "keyword.file.content.ignore",
-              "patterns": [
-                {
-                  "include": "#symbols"
-                }
-              ]
-            },
-            "3": {
-              "name": "keyword.character.file.extension.ignore"
-            }
-          }
         }
       ]
     },
@@ -122,6 +106,30 @@
             },
             "3": {
               "name": "constant.character.directory.ignore"
+            }
+          }
+        }
+      ]
+    },
+    "file": {
+      "patterns": [
+        {
+          "name": "line.file.ignore",
+          "match": "^(/)?(.+)(\\.[\\w]+)?(?<!/)$",
+          "captures": {
+            "1": {
+              "name": "constant.restriced.file.ignore"
+            },
+            "2": {
+              "name": "keyword.file.content.ignore",
+              "patterns": [
+                {
+                  "include": "#symbols"
+                }
+              ]
+            },
+            "3": {
+              "name": "keyword.character.file.extension.ignore"
             }
           }
         }

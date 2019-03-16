@@ -1,13 +1,9 @@
 {
-  "name": "Ignore File (gitignore syntax)",
-  "scopeName": "text.ignore",
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ignore-mercurial",
+  "scopeName": "text.ignore.hgignore",
   "fileTypes": [
-    "gitignore",
-    "npmignore",
-    "coffeelintignore",
-    "dockerignore",
-    "atomignore",
-    "vscodeignore"
+    "hgignore"
   ],
   "maxTokensPerLine": 100,
   "patterns": [
@@ -56,12 +52,12 @@
           "match": "(?<!^|\\\\)(!)(.*)",
           "captures": {
             "1": {
-              "name": "constant.other.symbol.negate.ignore"
+              "name": "invalid.illegal.symbol.negate.ignore"
             }
           }
         },
         {
-          "name": "constant.other.symbol.negate.ignore",
+          "name": "invalid.illegal.symbol.negate.ignore",
           "match": "(?<!\\\\)!"
         }
       ]

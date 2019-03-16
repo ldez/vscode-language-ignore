@@ -1,45 +1,58 @@
 {
-    "name": "ignore",
-    "displayName": "language-ignore",
+    "name": "ignore-files",
+    "displayName": "Ignore files",
     "description": "Syntax highlighting for 'ignore' files : gitignore, npmignore, dockerignore, coffeelintignore, ...",
     "version": "0.0.1",
     "publisher": "ldez",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ldez/vscode-language-ignore"
+    },
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^1.32.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [{
             "id": "ignore",
             "aliases": ["Ignore File (gitignore syntax)", "ignore"],
-            "extensions": [".gitignore",".npmignore",".coffeelintignore",".dockerignore",".atomignore",".vscodeignore"],
-            "configuration": "./ignore.configuration.json"
+            "extensions": [
+                ".gitignore",
+                ".npmignore",
+                ".coffeelintignore",
+                ".dockerignore",
+                ".atomignore",
+                ".vscodeignore",
+                ".eslintignore",
+                ".prettierignore"
+            ],
+            "configuration": "./language-configuration.json"
         },{
             "id": "ignore-slug",
             "aliases": ["Ignore File for Slug compiler", "ignore-slug"],
             "extensions": [".slugignore"],
             "filenames": [".gitignore"],
-            "configuration": "./ignore.configuration.json"
+            "configuration": "./language-configuration.json"
         },{
             "id": "ignore-hgignore",
             "aliases": ["Ignore File for Mecurial", "ignore-hg"],
             "extensions": [".hgignore"],
-            "configuration": "./ignore.configuration.json"
+            "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "ignore",
             "scopeName": "text.ignore",
-            "path": "./syntaxes/ignore.json"
+            "path": "./syntaxes/ignore.tmLanguage.json"
         },{
             "language": "ignore-slug",
             "scopeName": "text.ignore.slugignore",
-            "path": "./syntaxes/ignore-slug.json"
+            "path": "./syntaxes/ignore-slug.tmLanguage.json"
         },{
             "language": "ignore-hgignore",
             "scopeName": "text.ignore.hgignore",
-            "path": "./syntaxes/ignore-mercurial.json"
+            "path": "./syntaxes/ignore-mercurial.tmLanguage.json"
         }]
     }
 }
