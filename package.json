@@ -2,11 +2,11 @@
     "name": "ignore-files",
     "displayName": "Ignore files",
     "description": "Syntax highlighting for 'ignore' files : gitignore, npmignore, dockerignore, coffeelintignore, ...",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "ldez",
     "repository": {
-      "type": "git",
-      "url": "https://github.com/ldez/vscode-language-ignore"
+        "type": "git",
+        "url": "https://github.com/ldez/vscode-language-ignore"
     },
     "engines": {
         "vscode": "^1.32.0"
@@ -15,45 +15,68 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "ignore",
-            "aliases": ["Ignore File (gitignore syntax)", "ignore"],
-            "extensions": [
-                ".gitignore",
-                ".npmignore",
-                ".coffeelintignore",
-                ".dockerignore",
-                ".atomignore",
-                ".vscodeignore",
-                ".eslintignore",
-                ".prettierignore",
-                ".stylelintignore"
-            ],
-            "configuration": "./language-configuration.json"
-        },{
-            "id": "ignore-slug",
-            "aliases": ["Ignore File for Slug compiler", "ignore-slug"],
-            "extensions": [".slugignore"],
-            "filenames": [".gitignore"],
-            "configuration": "./language-configuration.json"
-        },{
-            "id": "ignore-hgignore",
-            "aliases": ["Ignore File for Mecurial", "ignore-hg"],
-            "extensions": [".hgignore"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "ignore",
-            "scopeName": "text.ignore",
-            "path": "./syntaxes/ignore.tmLanguage.json"
-        },{
-            "language": "ignore-slug",
-            "scopeName": "text.ignore.slugignore",
-            "path": "./syntaxes/ignore-slug.tmLanguage.json"
-        },{
-            "language": "ignore-hgignore",
-            "scopeName": "text.ignore.hgignore",
-            "path": "./syntaxes/ignore-mercurial.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "ignore",
+                "aliases": [
+                    "Ignore File (gitignore syntax)",
+                    "ignore"
+                ],
+                "extensions": [
+                    ".gitignore",
+                    ".npmignore",
+                    ".coffeelintignore",
+                    ".dockerignore",
+                    ".atomignore",
+                    ".vscodeignore",
+                    ".eslintignore",
+                    ".prettierignore",
+                    ".stylelintignore"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "ignore-slug",
+                "aliases": [
+                    "Ignore File for Slug compiler",
+                    "ignore-slug"
+                ],
+                "extensions": [
+                    ".slugignore"
+                ],
+                "filenames": [
+                    ".gitignore"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "ignore-hgignore",
+                "aliases": [
+                    "Ignore File for Mecurial",
+                    "ignore-hg"
+                ],
+                "extensions": [
+                    ".hgignore"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ignore",
+                "scopeName": "text.ignore",
+                "path": "./syntaxes/ignore.tmLanguage.json"
+            },
+            {
+                "language": "ignore-slug",
+                "scopeName": "text.ignore.slugignore",
+                "path": "./syntaxes/ignore-slug.tmLanguage.json"
+            },
+            {
+                "language": "ignore-hgignore",
+                "scopeName": "text.ignore.hgignore",
+                "path": "./syntaxes/ignore-mercurial.tmLanguage.json"
+            }
+        ]
     }
 }
