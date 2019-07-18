@@ -2,7 +2,7 @@
     "name": "ignore-files",
     "displayName": "Ignore files",
     "description": "Syntax highlighting for 'ignore' files : gitignore, npmignore, dockerignore, coffeelintignore, ...",
-    "version": "0.0.2",
+    "version": "0.0.1",
     "publisher": "ldez",
     "repository": {
       "type": "git",
