@@ -10,7 +10,8 @@
     "atomignore",
     "vscodeignore",
     "eslintignore",
-    "prettierignore"
+    "prettierignore",
+    "stylelintignore"
   ],
   "maxTokensPerLine": 100,
   "patterns": [
