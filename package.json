@@ -26,7 +26,8 @@
                 ".atomignore",
                 ".vscodeignore",
                 ".eslintignore",
-                ".prettierignore"
+                ".prettierignore",
+                ".stylelintignore"
             ],
             "configuration": "./language-configuration.json"
         },{
