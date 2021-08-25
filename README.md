@@ -14,8 +14,9 @@ Adds syntax highlighting to 'ignore' files.
 - `.coffeelintignore`: works just like a `.gitignore`.
 - `.slugignore`: does not support negated `!` patterns. [Heroku - Slug Compiler](https://devcenter.heroku.com/articles/slug-compiler#ignoring-files-with-slugignore)
 - `.atomignore`: works just like a `.gitignore`. [tree-ignore](https://atom.io/packages/tree-ignore)
-- `.hgignore`: references [hgignore](https://www.mercurial-scm.org/wiki/.hgignore) (currently only glop patterns)
+- `.hgignore`: references [hgignore](https://www.mercurial-scm.org/wiki/.hgignore) (currently only glob patterns)
 - `.vscodeignore`: works just like a `.gitignore` [references](https://code.visualstudio.com/docs/tools/vscecli#_advance-usage)
 - `.eslintignore`:  works just like a `.gitignore` [references](https://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories)
 - `.prettierignore`:  works just like a `.gitignore` [references](https://prettier.io/docs/en/ignore.html#ignoring-files)
 - `.stylelintignore`:  works just like a `.gitignore` [references](https://stylelint.io/user-guide/configuration#stylelintignore)
+- `.markdownlintignore`: works just like a `.gitignore` [references](https://github.com/igorshubovych/markdownlint-cli#ignoring-files)
