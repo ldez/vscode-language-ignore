@@ -11,7 +11,8 @@
     "vscodeignore",
     "eslintignore",
     "prettierignore",
-    "stylelintignore"
+    "stylelintignore",
+    "markdownlintignore"
   ],
   "maxTokensPerLine": 100,
   "patterns": [

@@ -31,7 +31,8 @@
                     ".vscodeignore",
                     ".eslintignore",
                     ".prettierignore",
-                    ".stylelintignore"
+                    ".stylelintignore",
+                    ".markdownlintignore"
                 ],
                 "configuration": "./language-configuration.json"
             },
